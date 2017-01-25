@@ -1,5 +1,5 @@
 ## Intention
-When working with database, sometimes we need to modify schema, and sometimes data. Doing both things in laravel migrations is painful. This package gives simple means to keep schema changes in migrations and data changes in fixtures.
+When working with database, sometimes we need to modify schema, and sometimes data. Doing both things in laravel migrations is painful. This package gives simple means to keep two of them separately.
 
 ## Installation
 Install via composer:
@@ -34,13 +34,13 @@ FIXTURES_NAMESPACE=App\MyFixtures
 ```
 
 ## Examples
-[Take a look](src/Examples). For the case depicted, in production, to fully migrate data you will run 
+Take a look at [several examples](src/Examples). For the case depicted, in production, to fully migrate data you will run 
 ```
 php artisan fixture:run "\Asvae\LaravelFixtures\Examples\FixtureSet"
 ```
 In development, to refresh single table you will run solitary fixtures as these are much faster.
 
 ## Hints
-* You can copy class name in PHPStorm by placing cursor onto class name and pressing `Command + Shift + Alt + C` 
+* You can copy namespaced class name in PHPStorm by placing cursor onto class name and pressing `Command + Shift + Alt + C` 
 * If you want to add some functionality, feel free to just copy package in your project. Several classes won't hurt.
 * Spread a word or leave a star if what I did was helpful for you.
