@@ -1,3 +1,6 @@
+## Intention
+When working with database, sometimes we need to modify schema, and sometimes data. Doing both things in laravel migrations is painful. This package gives simple means to keep schema changes in migrations and data changes in fixtures.
+
 ## Installation
 Install via composer:
 ```
