@@ -3,7 +3,6 @@
 namespace Asvae\LaravelFixtures;
 
 use Illuminate\Console\Command;
-use Asvae\LaravelFixtures\FixtureContract;
 
 abstract class AbstractFixture implements FixtureContract
 {
@@ -26,16 +25,32 @@ abstract class AbstractFixture implements FixtureContract
         $this->command = $command;
     }
 
+    /**
+     * Get command kernel instance.
+     *
+     * @return Command
+     */
     protected function getCommand()
     {
         return $this->command;
     }
 
+    /**
+     * Run another fixture by class name.
+     *
+     * @param $className
+     */
     protected function runFixture($className)
     {
         $this->command->call('fixture:run', ['fixture' => $className]);
     }
 
+    /**
+     * Run fixtures in array order.
+     * Array keys are ignored, use them as comments.
+     *
+     * @param array $array
+     */
     protected function runArray(array $array){
         foreach ($array as $item) {
             if (is_array($item)){

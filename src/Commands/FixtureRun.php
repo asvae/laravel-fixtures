@@ -51,7 +51,7 @@ class FixtureRun extends Command
         };
 
         // Is shortened class name so we'll append namespace.
-        $className = $this->fixtureNamespace.studly_case($slug);
+        $className = $this->fixtureNamespace.'\\'.studly_case($slug);
 
         if (! class_exists($className)) {
             throw new \Exception("Class $className does not exist.");
