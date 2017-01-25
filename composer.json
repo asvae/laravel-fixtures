@@ -1,0 +1,23 @@
+{
+    "name": "asvae/laravel-fixtures",
+    "description": "",
+    "keywords": ["laravel", "database", "migrations"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yauheni Prakopchyk",
+            "email": "ontrew@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "laravel/framework": "5.*",
+    },
+    "autoload": {
+        "psr-4": {
+            "Asvae\\LaravelFixtures\\": "src/"
+        }
+    }
+}
