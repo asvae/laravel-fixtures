@@ -1,4 +1,9 @@
 ## Installation
+Install via composer:
+```
+composer require asvae/laravel-fixtures
+```
+
 To your `App\Console\Kernel` add command like this:
 
 ```php
@@ -32,7 +37,7 @@ php artisan fixture:run "\Asvae\LaravelFixtures\Examples\FixtureSet"
 ```
 In development, to refresh single table you will run solitary fixtures as these are much faster.
 
-
-
 ## Hints
 * You can copy class name in PHPStorm by placing cursor onto class name and pressing `Command + Shift + Alt + C` 
+* If you want to add some functionality, feel free to just copy package in your project. Several classes won't hurt.
+* Spread a word or leave a star if what I did was helpful for you.
